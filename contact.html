@@ -13,14 +13,17 @@
     <link href="./assets/css/app.css" rel="stylesheet" />
 </head>
 
-<body class="index-page">
+<body class="contact-page">
+
+    <!-- Scroll to Top button -->
+    <a id="scrolltoTop">Top</a>
     
-    <!-- Navbar Success -->
+    <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg navbar-absolute rgba-indigo-strong">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-translate">
                 <img class="mr-2" src="assets/img/w-logo-white.png" alt="logo" width="35px" height="35px">
-                <a class="navbar-brand" href="#">Dain</a>
+                <a class="navbar-brand" href="index.html">Dain</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
@@ -29,44 +32,196 @@
             </div>
             <div class="collapse navbar-collapse" id="example-navbar-success">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Intro
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="intro.html">Intro</a>
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <!-- Menu for PC -->
+                    <li class="nav-item dropdown dropdown-wide d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Diet
                         </a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h4><strong>Diet Description</strong></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ducimus! Iusto voluptatem nam deleniti vel nostrum non assumenda eligendi, facilis. Quasi nobis perferendis commodi unde cumque inventore modi assumenda magni.    
+                                        </p>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 1</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 2</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 3</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 4</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 5</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 6</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 7</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-3 px-0">
+                                                <a class="dropdown-item px-2" href="page.html">
+                                                    <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                                    <h5>Diet SubMenu 8</h5>
+                                                    <p>Lorem ipsum dolor sit amet.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <!-- Menu for Mobile -->
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Diet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="page.html">Diet Subpage1</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage2</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage3</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage4</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage5</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage6</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage7</a>
+                            <a class="dropdown-item" href="page.html">Diet Subpage8</a>
+                        </div>
+                    </li>
+                    <!-- Menu for PC -->
+                    <li class="nav-item dropdown dropdown-wide d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Skin
                         </a>
+                        <div class="dropdown-menu w-75" aria-labelledby="navbarDropdown">
+                            <div class="container py-3">
+                                <div class="row">
+                                    <div class="col px-0">
+                                        <a class="dropdown-item px-2" href="page.html">
+                                            <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                            <h5>Title1</h5>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </div>
+                                    <div class="col px-0">
+                                        <a class="dropdown-item px-2" href="page.html">
+                                            <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                            <h5>Title2</h5>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </div>
+                                    <div class="col px-0">
+                                        <a class="dropdown-item px-2" href="page.html">
+                                            <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                            <h5>Title3</h5>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </div>
+                                    <div class="col px-0">
+                                        <a class="dropdown-item px-2" href="page.html">
+                                            <img src="assets/img/project1.jpg" alt="" class="img-fluid img-raised rounded mb-3">
+                                            <h5>Title4</h5>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu for Mobile -->
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Diet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="page.html">page1</a>
+                            <a class="dropdown-item" href="page.html">page2</a>
+                            <a class="dropdown-item" href="page.html">page3</a>
+                            <a class="dropdown-item" href="page.html">page4</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="page.html">
                             Lifting
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="page.html">
                             Woman
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="page.html">
                             Gongjindan
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="page.html">
                             Traffic Accident
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Community
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="review.html">Review</a>
+                            <a class="dropdown-item" href="case.html">Case</a>
+                            <a class="dropdown-item" href="community.html">Online</a>
+                            <a class="dropdown-item" href="community.html">Notice</a>
+                            <a class="dropdown-item" href="community.html">Press</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="#">
+                            <p>Logout</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -75,7 +230,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link btn btn-warning" href="#">
+                            <p>Signup</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-search">
                             <i class="fas fa-search"></i>
                         </a>
                     </li>
@@ -86,6 +246,7 @@
 
     <div class="wrapper">
 
+        <!-- Top Banner -->
         <section class="page-header page-header-small wow fadeInDown">
             <div class="page-header-image" data-parallax="true" style="background-image:  url('assets/img/bg45.jpg');">
             </div>
@@ -99,10 +260,13 @@
             </div>
         </section>
 
+        <!-- Main Section -->
         <section class="main">
             <div class="section-content">
                 <div class="container">
                     <div class="row">
+
+                        <!-- Form Section -->
                         <div class="col-md-5 ml-auto mr-auto wow slideInLeft">
                             <h2 class="title">Send us a message</h2>
                             <p class="description">You can contact us with anything related to our Products. We'll get in touch with you as soon as possible.
@@ -145,6 +309,7 @@
                             </form>
                         </div>
 
+                        <!-- Info Section -->
                         <div class="col-md-5 ml-auto mr-auto box-item-raised wow slideInRight">
                             <div class="info info-horizontal">
                                 <div class="icon icon-primary">
@@ -190,6 +355,7 @@
             </div>
         </section>
 
+        <!-- Contact Map Section -->
         <section id="contactMap" class="wow slideInLeft">
 
             <div class="container">
@@ -225,37 +391,38 @@
 
         </section>
         
+        <!-- Footer -->
         <footer class="footer footer-white wow fadeInUp">
             <div class="container">
-                <a class="footer-brand" href="#">DAIN OMC</a>
+                <a class="footer-brand" href="index.html">DAIN OMC</a>
                 <ul class="pull-center">
                     <li>
-                        <a href="#pablo" class="nav-link">
-                            Intro
+                        <a href="#" class="nav-link">
+                            Privacy
                         </a>
                     </li>
                     <li>
-                        <a href="#pablo" class="nav-link">
-                            Menu1
+                        <a href="contact.html" class="nav-link">
+                            Contact
                         </a>
                     </li>
                     <li>
-                        <a href="#pablo" class="nav-link">
-                            Menu2
+                        <a href="community.html" class="nav-link">
+                            Notice
                         </a>
                     </li>
                     <li>
-                        <a href="#pablo" class="nav-link">
-                            Menu3
+                        <a href="community.html" class="nav-link">
+                            Press
                         </a>
                     </li>
                     <li>
-                        <a href="#pablo" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="far fa-newspaper"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#pablo" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>

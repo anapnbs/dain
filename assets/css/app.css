@@ -1145,6 +1145,27 @@
   padding-bottom: 4rem;
 }
 
+#scrolltoTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:  rgba(3, 169, 244, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in; 
+}
+
+#scrolltoTop:hover {
+  background-color:  rgba(3, 169, 244, 0.7);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);  
+}
+
 a {
   text-decoration: none !important;
 }
@@ -1207,6 +1228,9 @@ span.tagline {
   font-weight: 900 !important;
   border-bottom: 2px solid #ffbb33; }
 
+.modal-xl { 
+  max-width: 100%; 
+}
 
 footer {
   border-top: 1px solid #ddd;
