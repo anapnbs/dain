@@ -244,6 +244,36 @@
         </div>
     </nav>
 
+    <!-- MODAL SEARCH -->
+    <div class="modal fade" id="modal-search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl my-0" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-term my-0" id="search-term" placeholder="<?php esc_html_e( 'Search for disease & treatment...', 'medipress' ); ?>" autofocus="true">
+                            <div class="input-group-append">
+                                <span class="input-group-text js-search-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times fa-2x text-danger"></i></span>
+                            </div><!-- input-group-append -->
+                        </div><!-- input-group -->
+                    </div><!-- modal-header -->
+                    <div class="modal-body pt-0">
+                        <div id="search-results">
+                            <div class="row">
+                                <div class="col-md-4" id="search-post"></div>
+                                <div class="col-md-4" id="search-page"></div>
+                                <div class="col-md-4" id="search-post_type">
+                                    <div class="mb-4" id="search-notice"></div>
+                                    <div id="search-review"></div>
+                                </div>
+                            </div><!-- row -->
+                        </div><!-- search-results -->
+                    </div><!-- modal-body -->  
+                </div><!-- container -->
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal-search -->
+
     <div class="wrapper">
 
         <!-- Top Banner -->
