@@ -11,14 +11,6 @@ h1, h2, h3, h4 {
   font-family: 'Nanum Myeongjo', serif !important;
 }
 
-.intro-page .section {
-  background-color: #d7ccc8 !important;
-}
-
-.intro-page .section * {
-  color: #01579B !important;
-}
-
 .section-content {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -105,7 +97,8 @@ a {
 span.tagline {
   display: inline-block;
   font-weight: 900 !important;
-  border-bottom: 2px solid #ffbb33; }
+  border-bottom: 2px solid #ffbb33; 
+}
 
 .modal-xl { 
   max-width: 100%; 
@@ -114,200 +107,6 @@ span.tagline {
 footer {
   border-top: 1px solid #ddd;
 }
-/* Box item */
-.box-item, .box-item-raised {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ddd; }
-  .box-item img, .box-item-raised img {
-    display: block; }
-  .box-item div.card-img-overlay, .box-item-raised div.card-img-overlay {
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 2em;
-    background: rgba(234, 128, 252, 0.75);
-    color: white;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    transition: top ease-in-out 250ms; }
-    .box-item div.card-img-overlay h1.card-title, .box-item-raised div.card-img-overlay h1.card-title,
-    .box-item div.card-img-overlay h2.card-title, .box-item-raised div.card-img-overlay h2.card-title,
-    .box-item div.card-img-overlay h4.card-title, .box-item-raised div.card-img-overlay h4.card-title {
-      margin-bottom: auto; }
-    .box-item div.card-img-overlay a.boxItem-link, .box-item-raised div.card-img-overlay a.boxItem-link {
-      color: white;
-      font-weight: bold;
-      border-bottom: 3px solid white;
-      font-size: 1.1rem;
-      text-decoration: none; }
-    .box-item.post-excerpt {
-      position: absolute;
-      top: 10px;
-      left: -40px;
-      right: 80px; }
-  .box-item:hover div.card-img-overlay, .box-item-raised:hover div.card-img-overlay,
-  .box-item:focus div.card-img-overlay, .box-item-raised:focus div.card-img-overlay {
-    top: 0; }
-
-.box-item-raised {
-  transition: 0.5s; }
-  .box-item-raised:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
-
-/* Flex Panel Gallery */
-.panels {
-  min-height:100vh;
-  overflow: hidden;
-  /*display: flex;*/
-}
-.panel {
-  background:#6B0F9C;
-  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
-  color:white;
-  text-align: center;
-  align-items:center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition:
-  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  background 0.2s;
-  font-size: 20px;
-  background-size:cover;
-  background-position:center;
-  flex: 1;
-  /*justify-content: center;
-  display: flex;*/
-  flex-direction: column;
-}
-/* Flex Items */
-.panel > * {
-  margin:0;
-  width: 100%;
-  transition:transform 0.2s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.panel > *:first-child { transform: translateY(-100%); }
-.panel.open-active > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(100%); }
-.panel.open-active > *:last-child { transform: translateY(0); }
-.panel p {
-  text-transform: uppercase;
-  /*font-family: 'Amatic SC', cursive;*/
-  font-family: 'Nanum Pen Script', cursive !important;
-  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2em;
-}
-.panel p:nth-child(2) {
-  font-size: 4em;
-}
-.panel.open {
-  flex: 5;
-  font-size:40px;
-}
-
-/* Carousel custom style */ 
-.carousel-caption {
-  top: 45% !important;
-  bottom: 45% !important;
-}
-
-/* Map */
-#contactMap {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-  display: block; }
-
-.address-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 50px;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 3; }
-  .address-info:hover {
-    background-color: white; }
-  .md-form .prefix {
-    font-size: 1.5rem !important;
-  }
-
-.address-info-mobile {
-  position: absolute;
-  width: 75%;
-  bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 3; }
-  .address-info-mobile:hover {
-    background-color: white; }
-
-/* Clinic Item Slides in Frontpage */
-.clinic-items {
-  /*height:800px;
-  padding: 100px;*/
-  width:100%;
-  /*border:1px solid white;*/
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
-  position: relative;
-  /*background: rgba(255,255,255,0.1);
-  font-size: 0;*/
-  perspective: 500px;
-}
-
-.clinic-items.active {
-  /*background: rgba(255,255,255,0.3);*/
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-  transform: scale(1);
-}
-
-.clinic-item {
-  width:300px;
-  /*width: 20%;*/
-  /*height: calc(100% - 40px);*/
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  /*font-size: 80px;
-  font-weight: 100;
-  color:rgba(0,0,0,0.15);*/
-  /*box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);*/
-}
-
-.clinic-item:hover {
-  transform: scale(1.2);
-}
-
-/* Clinic Page Styles */
-.product-page .widget {
-  margin: -90px 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  .product-page .widget {
-    margin: 0;
-  }  
-}
-
 
 /* Navbar */
 .nav-item.dropdown-wide {
@@ -359,3 +158,212 @@ footer {
     height: initial;
   }
 }
+
+/* Box item */
+.box-item, .box-item-raised {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd; 
+}
+
+.box-item img, .box-item-raised img {
+  display: block; 
+}
+
+.box-item div.card-img-overlay, .box-item-raised div.card-img-overlay {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 2em;
+  background: rgba(234, 128, 252, 0.75);
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: top ease-in-out 250ms; 
+}
+
+.box-item div.card-img-overlay h1.card-title, .box-item-raised div.card-img-overlay h1.card-title,
+.box-item div.card-img-overlay h2.card-title, .box-item-raised div.card-img-overlay h2.card-title,
+.box-item div.card-img-overlay h4.card-title, .box-item-raised div.card-img-overlay h4.card-title {
+  margin-bottom: auto; 
+}
+
+.box-item div.card-img-overlay a.boxItem-link, .box-item-raised div.card-img-overlay a.boxItem-link {
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  font-size: 1.1rem;
+  text-decoration: none; 
+}
+
+.box-item.post-excerpt {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  right: 80px; 
+}
+
+.box-item:hover div.card-img-overlay, .box-item-raised:hover div.card-img-overlay,
+.box-item:focus div.card-img-overlay, .box-item-raised:focus div.card-img-overlay {
+  top: 0; 
+}
+
+.box-item-raised {
+  transition: 0.5s; 
+}
+
+.box-item-raised:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); 
+}
+
+/* Flex Panel Gallery */
+.panels {
+  min-height:100vh;
+  overflow: hidden;
+}
+
+.panel {
+  background:#6B0F9C;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  color:white;
+  text-align: center;
+  align-items:center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition:
+  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  background 0.2s;
+  font-size: 20px;
+  background-size:cover;
+  background-position:center;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Flex Items */
+.panel > * {
+  margin:0;
+  width: 100%;
+  transition:transform 0.2s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.open-active > *:last-child { transform: translateY(0); }
+.panel p {
+  text-transform: uppercase;
+  /*font-family: 'Amatic SC', cursive;*/
+  font-family: 'Nanum Pen Script', cursive !important;
+  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 4em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size:40px;
+}
+
+/* Carousel custom style */ 
+.carousel-caption {
+  top: 45% !important;
+  bottom: 45% !important;
+}
+
+/* Map */
+#contactMap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  display: block; }
+
+.address-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 3; 
+}
+
+.address-info:hover {
+  background-color: white; 
+}
+
+.md-form .prefix {
+  font-size: 1.5rem !important;
+}
+
+.address-info-mobile {
+  position: absolute;
+  width: 75%;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 3; 
+}
+
+.address-info-mobile:hover {
+  background-color: #fff; 
+}
+
+/* Clinic Item Slides in Frontpage */
+.clinic-items {
+  width:100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  perspective: 500px;
+}
+
+.clinic-items.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.clinic-item {
+  width:300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.clinic-item:hover {
+  transform: scale(1.2);
+}
+
+/* Clinic Page Styles */
+.product-page .widget {
+  margin: -90px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .product-page .widget {
+    margin: 0;
+  }  
+}
+
+
