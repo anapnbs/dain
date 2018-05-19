@@ -282,6 +282,11 @@ footer {
   bottom: 45% !important;
 }
 
+.carousel-caption p {
+  font-family: 'Nanum Pen Script', cursive !important;
+  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+
 /* Map */
 #contactMap {
   position: relative;

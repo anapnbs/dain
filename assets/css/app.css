@@ -29,12 +29,12 @@ h1, h2, h3, h4 {
   border-radius: 10px;
   color: white;
   cursor: pointer;
-  transition: 0.2s ease-in; 
+  transition: 0.2s ease-in;
 }
 
 #scrolltoTop:hover {
   background-color:  rgba(3, 169, 244, 0.7);
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);  
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -67,7 +67,7 @@ a {
 }
 
 .divider-new h2,
-.divider-old h2 { 
+.divider-old h2 {
   margin-top:5px;
 }
 
@@ -89,7 +89,7 @@ a {
   margin:0 0 0 .45em;
 }
 
-.divider-new { 
+.divider-new {
   margin-top:45px;
   margin-bottom:45px;
 }
@@ -97,11 +97,11 @@ a {
 span.tagline {
   display: inline-block;
   font-weight: 900 !important;
-  border-bottom: 2px solid #ffbb33; 
+  border-bottom: 2px solid #ffbb33;
 }
 
-.modal-xl { 
-  max-width: 100%; 
+.modal-xl {
+  max-width: 100%;
 }
 
 footer {
@@ -126,17 +126,17 @@ footer {
 @media( min-width: 768px ) and ( max-width: 991px ) {
   .navbar .dropdown-menu {
     position: static !important;
-  }    
+  }
 }
 
 @media( max-width: 767px ){
   .navbar .dropdown-menu {
     position: static !important;
-  }    
+  }
 }
 
-.navbar-nav > li > .dropdown-menu { 
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); 
+.navbar-nav > li > .dropdown-menu {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
 
 .nav-item .dropdown-menu:before {
@@ -163,11 +163,11 @@ footer {
 .box-item, .box-item-raised {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
 }
 
 .box-item img, .box-item-raised img {
-  display: block; 
+  display: block;
 }
 
 .box-item div.card-img-overlay, .box-item-raised div.card-img-overlay {
@@ -182,13 +182,13 @@ footer {
   text-align: left;
   display: flex;
   flex-direction: column;
-  transition: top ease-in-out 250ms; 
+  transition: top ease-in-out 250ms;
 }
 
 .box-item div.card-img-overlay h1.card-title, .box-item-raised div.card-img-overlay h1.card-title,
 .box-item div.card-img-overlay h2.card-title, .box-item-raised div.card-img-overlay h2.card-title,
 .box-item div.card-img-overlay h4.card-title, .box-item-raised div.card-img-overlay h4.card-title {
-  margin-bottom: auto; 
+  margin-bottom: auto;
 }
 
 .box-item div.card-img-overlay a.boxItem-link, .box-item-raised div.card-img-overlay a.boxItem-link {
@@ -196,27 +196,27 @@ footer {
   font-weight: bold;
   border-bottom: 3px solid white;
   font-size: 1.1rem;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .box-item.post-excerpt {
   position: absolute;
   top: 10px;
   left: -40px;
-  right: 80px; 
+  right: 80px;
 }
 
 .box-item:hover div.card-img-overlay, .box-item-raised:hover div.card-img-overlay,
 .box-item:focus div.card-img-overlay, .box-item-raised:focus div.card-img-overlay {
-  top: 0; 
+  top: 0;
 }
 
 .box-item-raised {
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .box-item-raised:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
 
 /* Flex Panel Gallery */
@@ -276,10 +276,15 @@ footer {
   font-size:40px;
 }
 
-/* Carousel custom style */ 
+/* Carousel custom style */
 .carousel-caption {
   top: 45% !important;
   bottom: 45% !important;
+}
+
+.carousel-caption p {
+  font-family: 'Nanum Pen Script', cursive !important;
+  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 }
 
 /* Map */
@@ -299,11 +304,11 @@ footer {
   right: 50px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: 3; 
+  z-index: 3;
 }
 
 .address-info:hover {
-  background-color: white; 
+  background-color: white;
 }
 
 .md-form .prefix {
@@ -315,11 +320,11 @@ footer {
   width: 75%;
   bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: 3; 
+  z-index: 3;
 }
 
 .address-info-mobile:hover {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 /* Clinic Item Slides in Frontpage */
@@ -363,7 +368,7 @@ footer {
 @media screen and (max-width: 768px) {
   .product-page .widget {
     margin: 0;
-  }  
+  }
 }
 
 
